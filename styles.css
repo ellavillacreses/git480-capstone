@@ -1,0 +1,90 @@
+/*CSS Layers*/
+@layer reset, base, layout, components, utilities, overrides;
+
+/*Imported Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Font Licensing Notes
+Fonts sourced from Google Fonts: DM Sans, Noto Serif
+Each font is distributed under an open source license and pertains to the SIL Open Font
+License Version 1.1 - 26 February 2007 */
+
+@layer reset {
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+    }
+}
+
+@layer base {
+    :root {
+        /*Coloring*/
+        --color-primary: #8438FF;
+        --color-secondary: #FF4FA3;
+        --color-accent: #D4FF4F;
+        --blue: #3CCBFF;
+        --yellow: #FFD84A;
+
+        --color-background: #17112B;
+        --color-surface: #292042;
+
+        --color-text: #FFFFFF;
+    
+        /*Typography*/
+        --font-heading: "DM Sans", Arial, sans-serif;
+        --font-body: "Noto Serif", Georgia, sans-serif;
+
+        --text-sm: 0.75rem;
+        --text-base: 1rem;
+        --text-lg: 1.25rem;
+
+        /*Spacing*/
+        --space-sm: 1rem;
+        --space-md: 1.5rem;
+        --space-lg: 2rem;
+
+        /*Layout*/
+        --container-width: 80rem;
+        --grid-gap: 1.5rem;
+        --content-width: 60ch;
+        --page-padding: 1.5rem;
+
+        /*Borders*/
+        --radius-sm: 0.5rem;
+        --radius-base: 1rem;
+        --radius-lg: 1.5rem;
+    }
+
+    body {
+        font-family: var(--font-body);
+        background: var(--color-background);
+        color: var(--color-text);
+    }
+
+    h1, h2, h3 {
+        font-family: var(--font-heading);
+    }
+
+    h1 {
+        font-size: var(--text-lg);
+    }
+
+    p {
+        font-size: var(--text-base);
+        max-width: var(--content-width);
+    }
+
+    a {
+        color: var(--color-accent);
+        font-weight: bold;
+    }
+
+    img, svg {
+        max-width: 100%;
+    }
+}
