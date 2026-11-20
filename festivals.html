@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festivals</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/note-favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="impact.html">Impact</a></li>
+                <li><a href="festivals.html" aria-current="page">Festivals</a></li>
+                <li><a href="map.html">Map</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Festival Glossary</h1>
+            <p>Explore the complete list of Arizona based festivals. Search using name or location to discover more. </p>
+        </section>
+
+        <section class="festival-glossary">
+            <h2>Explore Festivals</h2>
+
+            <form class="filter-bar" role="search">
+                <label for="festival-search">Search</label>
+                <input
+                    type="search"
+                    id="festival-search"
+                    placeholder="Name">
+
+                <label for="festival-filter">Filter by location</label>
+                <select id="festival-filter" name="festival-filter">
+                    <option value="all">All Locations</option>
+                    <option value="phoenix">Phoenix</option>
+                    <option value="tempe">Tempe</option>
+                    <option value="chandler">Chandler</option>
+                    <option value="other">Other</option>
+                </select>
+                <button type="submit">Search</button>
+            </form>
+
+            <h2>Complete Glossary</h2>
+
+            <article class="festival-card">
+                <img
+                  src="images/Goldrush2.jpg"
+                  alt="An image taken at Goldrush with the crowd in front of a stage with colorful lights"
+                  width="600"
+                  height="400">
+      
+                <h3>Goldrush Arizona 2027</h3>
+                <p>Location: Chandler, AZ</p>
+                <p>Date: September 9-11, 2027</p>
+                <a href="#">Explore More</a>
+              </article>
+
+              <article class="festival-card">
+                <img
+                  src="images/BirdsNest.jpg"
+                  alt="An image taken at Birds Nest with the crowd in front of a stage with colorful lights"
+                  width="600"
+                  height="400">
+      
+                <h3>Coors Light Birds Nest 2027</h3>
+                <p>Location: Scottsdale, AZ</p>
+                <p>Date: February 10-13, 2027</p>
+                <a href="#">Explore More</a>
+              </article>
+
+              <article class="festival-card">
+                <img
+                  src="images/CountryThunder.jpeg"
+                  alt="An image taken at Country Thunder with the crowd in front of a stage with colorful lights"
+                  width="600"
+                  height="400">
+      
+                <h3>Country Thunder Arizona 2027</h3>
+                <p>Location: Florence, AZ</p>
+                <p>Date: April 8-11, 2027</p>
+                <a href="#">Explore More</a>
+              </article>
+
+              <article class="festival-card">
+                <img
+                  src="images/Decadence.jpg"
+                  alt="An image taken at Decadence with the crowd in front of a stage with colorful lights"
+                  width="600"
+                  height="400">
+      
+                <h3>Decadence Arizona 2026</h3>
+                <p>Location: Phoenix, AZ</p>
+                <p>Date: December 30-31, 2026</p>
+                <a href="#">Explore More</a>
+              </article>
+
+              <article class="festival-card">
+                <img
+                  src="images/GemAndJam.jpg"
+                  alt="An image taken at Gem and Jam with the crowd in front of a stage with colorful lights"
+                  width="600"
+                  height="400">
+      
+                <h3>Gem and Jam Festival 2027</h3>
+                <p>Location: Tucson, AZ</p>
+                <p>Date: February 5-7, 2027</p>
+                <a href="#">Explore More</a>
+              </article>
+
+              <article class="festival-card">
+                <img
+                  src="images/InningsFest.jpeg"
+                  alt="An image taken at Innings Festival with the crowd in front of a stage with colorful lights"
+                  width="600"
+                  height="400">
+      
+                <h3>Innings Festival 2027</h3>
+                <p>Location: Tempe, AZ</p>
+                <p>Date: February 26-28, 2027</p>
+                <a href="#">Explore More</a>
+              </article>
+
+              <article class="festival-card">
+                <img
+                  src="images/M3F.webp"
+                  alt="An image taken at M3F with the crowd in front of a stage with colorful lights"
+                  width="600"
+                  height="400">
+      
+                <h3>M3F Festival 2027</h3>
+                <p>Location: Phoenix, AZ</p>
+                <p>Date: March 5-7, 2027</p>
+                <a href="#">Explore More</a>
+              </article>
+
+              <article class="festival-card">
+                <img
+                  src="images/SystemOverload.jpg"
+                  alt="An image taken at System Overload with the crowd in front of a stage with colorful lights"
+                  width="600"
+                  height="400">
+      
+                <h3>System Overload Fest 2027</h3>
+                <p>Location: Chandler, AZ</p>
+                <p>Date: February 26-27, 2027</p>
+                <a href="#">Explore More</a>
+              </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Arizona Festival Economic Impact</p>
+        <p>Site created by Ella Villacreses for educational purposes only</p>
+    </footer>
+    
+</body>
+</html>

@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Festivals in Arizona</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/note-favicon.png">
     <link rel="stylesheet" href="styles.css">
-
-
 </head>
 <body>
     <header class="site-header">
@@ -26,31 +25,15 @@
     
       <main>
     
-        <section class="hero" aria-labelledby="hero-title">
-          <h1 id="hero-title">Beyond the Music</h1>
+        <section class="hero home-hero" aria-labelledby="hero-title">
+          <h1 id="hero-title">The Effect of Live Music on Arizona's Economy</h1>
     
           <p>
-            Discover how festivals across Arizona impact
-            local businesses, generate revenue, and
-            contribute to the state's economy.
-          </p>
-    
-          <a href="impact.html" class="button">
-            Explore the Impact
-          </a>
-        </section>
-    
-        <section class="introduction" aria-labelledby="intro-title">
-          <h2 id="intro-title">The Impact of Music on Arizona's Economy</h2>
-    
-          <p>
-            I am writing this later but it'll be an introduction lol.
+            Discover how Arizona based music festivals impact local economies through supporting local businesses, increasing consumer spending, and creating job opportunities. Explore the financial influence of festivals and the communities they bring together.
           </p>
         </section>
     
-        <section class="featured" aria-labelledby="featured-title">
-          <h2 id="featured-title">Explore the Impact</h2>
-    
+        <section class="featured" aria-labelledby="featured-title">    
           <div class="feature-grid">
     
             <article class="feature-card">
@@ -90,9 +73,46 @@
     
           </div>
         </section>
+
+        <section id="form">
+            <h4>Festival Feedback Form</h4> Share your festival experience with us to help better understand how music festivals impact local businesses! Required fields are marked with an asterisk (<span class="required">*</span>).</p>
+            <form id="contactForm">
+
+                <label for="my-name">Full Name<span class="required">*</span></label>
+                <input type="text" name="my-name" id="my-name" required>
+                <span id="nameError"></span>
+
+                <label for="my-phone">Phone<span class="required">*</span></label>
+                <input type="tel" name="my-phone" id="my-phone">
+                <span id="phoneError"></span>
+
+                <label for="my-email">Email<span class="required">*</span></label>
+			    <input type="email" name="my-email" id="my-email" required>
+                <span id="emailError"></span>
+				
+			<fieldset>
+				<legend>Preferred Method of Contact</legend>
+				
+                <input type="radio" name="contact-pref" id="pref-email" value="email" checked>
+                <label for="pref-email">Email</label>
+
+                <input type="radio" name="contact-pref" id="pref-phone" value="phone">
+                <label for="pref-phone">Phone</label>
+			</fieldset>
+				
+			<label for="my-comments">Feedback<span class="required">*</span></label>
+			<textarea name="my-comments" id="my-comments"></textarea>
+            <span id="commentsError"></span>
+			
+			<input type="submit" name="my-submit" id="my-submit" value="Submit Form">
+		
+		    </form>
+        </div>
+    </section>
     
     <footer class="site-footer">
-        <p>Arizona Festival Economic Impact by Ella Villacreses</p>
-      </footer>
+        <p>Arizona Festival Economic Impact</p>
+        <p>Site created by Ella Villacreses for educational purposes only</p>
+    </footer>
 </body>
 </html>
